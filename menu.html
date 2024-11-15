@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        /* Réinitialisation de la marge et du padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: "Nunito", sans-serif;
+            display: flex;
+            background-color: #f1f1f1;
+            color: #666;
+        }
+
+        /* Conteneur principal avec menu et iframe */
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+        /* Menu vertical */
+        #navbar {
+            background-color: #192a56; /* Couleur du fond du menu */
+            width: 200px;
+            height: 100vh;
+            padding-top: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            left: 0;
+            top: 0;
+            animation: slideInFromLeft 1s ease-out; /* Animation de glissement depuis la gauche */
+        }
+
+        /* Liste des éléments de menu */
+        #navbar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        /* Chaque élément du menu */
+        #navbar li {
+            margin: 20px 0;
+        }
+
+        #navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            display: block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            position: relative;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            animation: fadeIn 0.5s ease-out; /* Animation de fade-in pour chaque lien */
+        }
+
+        /* Effet de survol des liens */
+        #navbar a:hover {
+            background-color: #275bae; /* Changement de couleur de fond */
+            transform: scale(1.15) /* Effet de zoom et de rotation */
+        }
+
+        /* Animation de fade-in pour les éléments du menu */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Animation pour faire glisser le menu depuis la gauche */
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Style de l'iframe qui affiche les pages */
+        /* iframe {
+            margin-left: 220px; /* Laisser de l'espace pour le menu */
+            width: calc(100% - 220px); /* Reste de l'espace après le menu */
+            height: 100vh;
+            border: none;
+        } */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Menu vertical -->
+        <div id="navbar">
+            <ul>
+                <li><a href="cv.html" target="conteneur">Mon CV</a></li>
+                <li><a href="page1.html" target="conteneur">Page 1</a></li>
+                <li><a href="page2.html" target="conteneur">Page 2</a></li>
+                <li><a href="page3.html" target="conteneur">Page 3</a></li>
+                <li><a href="page4.html" target="conteneur">Page 4</a></li>
+                <li><a href="page5.html" target="conteneur">Page 5</a></li>
+                <li><a href="page6.html" target="conteneur">Page 6</a></li>
+                <li><a href="tableau.html" target="conteneur">Les Tableaux</a></li>
+            </ul>
+        </div>
+
+        <!-- Frame pour afficher le contenu -->
+        <!-- <iframe name="conteneur" src="cv.html"></iframe> -->
+    </div>
+
+</body>
+</html>

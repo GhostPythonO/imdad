@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion de ligne ou de colonne</title>
+
+    <style>
+        caption{
+            font-size: 25px;
+        }
+        tr td{
+            padding: 20px;
+        }
+        #rgl, #rms{
+            background-color: green;
+        }
+        #gtl{
+            background-color: yellow;
+        }
+        #egp{
+            background-color: red;
+        }
+        #cg{
+            background-color: blue;
+        }
+        #cdm{
+            background-color: #AAA;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <table border="1" style="border-collapse: collapse;">
+            <caption>Filière</caption>
+            <tbody>
+                <tr>
+                    <td id="gtl" rowspan="2">GTL</td>
+                    <td id="rgl" colspan="2">RGL</td>
+                </tr>
+
+                <tr>
+                    <td id="rms">RMS</td>
+                    <td id="egp" rowspan="2">EGP</td>
+                </tr>
+
+                <tr>
+                    <td id="cg">CG</td>
+                    <td id="cdm">CDM</td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+</body>
+</html>

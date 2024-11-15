@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page5</title>
+    <style>
+        *{
+            transition: all .2s linear;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        body{
+            background-color: #f1f1f1;
+        }
+        
+        caption{
+            text-decoration: underline;
+        }
+        thead,tfoot{
+            font-size: 20px;
+            background-color: gray;
+        }
+        #table1, #table2{
+            display: flex;
+            justify-content: center; /* pour centrer horizontalement */
+        }
+        table{
+            border-collapse: collapse;
+        }
+        
+        td,th /* Toutes les cellules des tableaux... */
+        {
+        border: 2px solid blue; /* ... auront une bordure de 1px */
+        padding: 20px;
+        }
+
+        #table2{
+            margin-top: 30px;
+        }
+        #table2 caption{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="table1">
+        <table>
+            <tr>
+            <td>Carmen</td>
+            <td>33 ans</td>
+            <td>Espagne</td>
+            </tr>
+            <tr>
+            <td>Michelle</td>
+            <td>26 ans</td>
+            <td>Etats-Unis</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="table2">
+        <table>
+            <caption>Passagers du vol 377</caption>
+            <thead> <!-- En-tête du tableau -->
+               <tr>
+                    <th>Nom</th>
+                    <th>Age</th>
+                    <th>Pays</th>
+                </tr>
+            </thead>
+    
+            <tfoot> <!-- Pied de tableau -->
+                <tr>
+                    <th>Nom</th>
+                    <th>Age</th>
+                    <th>Pays</th>
+                </tr>
+            </tfoot>
+    
+            <tbody> <!-- Corps du tableau -->
+                <tr>
+                    <td>Carmen</td>
+                    <td>33 ans</td>
+                    <td>Espagne</td>
+                </tr>
+                <tr>
+                    <td>Michelle</td>
+                    <td>26 ans</td>
+                    <td>Etats-Unis</td>
+                </tr>
+                <tr>
+                    <td>François</td>
+                    <td>43 ans</td>
+                    <td>France</td>
+                <tr>
+                </tr>
+                <tr>
+                    <td>Martine</td>
+                    <td>34 ans</td>
+                    <td>France</td>
+                </tr>
+                <tr>
+                    <td>Jonathan</td>
+                    <td>13 ans</td>
+                    <td>Australie</td>
+                </tr>
+                <tr>
+                    <td>Xu</td>
+                    <td>19 ans</td>
+                    <td>Chine</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

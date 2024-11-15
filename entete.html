@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etete</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        /* Réinitialisation des marges et du padding pour éviter l'espace blanc */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Style de l'en-tête */
+        #entete {
+            background-color: rgb(14, 14, 118); /* Couleur du fond */
+            height: 80px; /* Hauteur de l'en-tête */
+            color: white;
+            display: flex; /* Utilisation de flexbox */
+            justify-content: center; /* Centrer horizontalement le contenu */
+            align-items: center; /* Centrer verticalement les éléments */
+            position: relative; /* Important pour le positionnement absolu des images */
+            padding: 0 20px; /* Ajouter du padding pour espacer les bords */
+        }
+
+        /* Style pour le titre h1 */
+        h1 {
+            margin: 0; /* Enlever les marges par défaut */
+            font-size: 2.2rem; /* Taille de la police du titre */
+            text-align: center; /* Centrer le texte horizontalement */
+            flex-grow: 1; /* Permet au titre de prendre l'espace restant */
+            color: white; /* Couleur du texte */
+        }
+
+        /* Style des images */
+        .img {
+            width: 5rem; /* Largeur de l'image */
+            height: auto; /* Garder les proportions de l'image */
+            position: absolute; /* Positionnement absolu */
+            top: 50%; /* Centrer verticalement les images */
+            transform: translateY(-50%); /* Centrer parfaitement les images verticalement */
+        }
+
+        /* Positionner les images aux extrémités */
+        #img1 {
+            left: 0px; /* Espace à gauche de l'image */
+        }
+
+        #img2 {
+            right: 0px; /* Espace à droite de l'image */
+        }
+
+    </style>
+</head>
+<body>
+    <header id="entete">
+        <!-- Logo à gauche -->
+        <a href="page3.html">
+            <img class="img" id="img1" src="logo_pigier.png" alt="Logo Pigier" title="Logo Pigier">
+        </a>
+        <!-- Titre centré -->
+        <h1>Bienvenue sur mon site</h1>
+        <!-- Logo à droite -->
+        <a href="https://pigier-benin.com">
+            <img class="img" id="img2" src="logo_pigier.png" alt="Logo Pigier" title="Logo Pigier">
+        </a>
+    </header> 
+</body>
+</html>

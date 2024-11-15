@@ -1,0 +1,179 @@
+/* PAGE 1 */
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+
+*{
+    font-family: "Nunito", sans-serif;
+    transition: all .2s linear;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+  html{
+    overflow-x: hidden; 
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+  }
+
+
+body{
+    background-color: #f1f1f1;
+}
+
+h1 , h2{
+    text-align: center;
+}
+
+ h2{
+    text-decoration: underline;
+ }
+
+ .info {
+    /*width: 30rem; /* ou une autre largeur souhaitée */
+    margin: 0 auto; /* centre le div horizontalement */
+    text-align: center; /* centre le texte à l'intérieur */ 
+}
+
+.info ul{
+    list-style-type:none;
+}
+
+.info ul, .info ol {
+    padding-left: 0; /* Supprime le rembourrage par défaut à gauche */
+    list-style-position: inside; /* Place les puces à l'intérieur du conteneur */
+    
+}
+
+.info ul li , .info ol li {
+    margin: 0; /* Supprime les marges */
+    padding: 5px 0; /* Ajuste le rembourrage vertical entre les éléments */
+    font-size: 1.3rem;
+}
+
+
+ #profil{
+    width: 13em;
+    border-radius: 10% 0; 
+    height: 100%!important;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0) ;
+    
+ }
+ 
+ #profil:hover{
+    width: 15em;
+    border-radius: 20% 5%; 
+ }
+
+ #filiere dl{
+    text-align: center;
+    font-size: 1.5em;
+ }
+
+ .barre {
+    border: 0; /* Supprime la bordure par défaut */
+    height: 4px; /* Épaisseur de la barre */
+    background-color: black; /* Couleur de la barre */
+    margin: 0px; /* Marge autour de la barre */
+ }
+ p{
+    font-size: 1.2rem;
+    justify-content: center;
+ }
+
+
+.tableau{
+    min-width: 400px;
+    width: auto;
+    box-shadow: 0 5px 50px rgba(0,0,0,0.15);
+    cursor: pointer;
+    margin: 100px auto;
+    border:2px solid midnightblue;
+    border-collapse: collapse;
+    position: relative;
+    top:-80px;
+
+}
+
+#titreTab{
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+thead tr{
+    background-color: midnightblue;
+    color: #fff;
+    text-align:left;
+}
+
+thead tr th{
+    padding: 10px 20px;
+}
+.admis th, .admis td, .refuser th, .refuser td{
+    padding: 15px 20px;
+    color: #fff;
+}
+.enjamb th, .enjamb td{
+    padding: 15px 20px;
+    
+}
+
+.admis td{
+    background-color: green;
+}
+
+.enjamb td{
+    background-color: yellow;
+}
+
+.refuser td{
+    background-color: red;
+}
+
+#ligne1 {
+    border: 3px dotted white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (max-width: 300px) {
+    header {
+        font-size: 10px; /* Taille pour écrans plus petits */
+    }
+
+    .img1, .img2{
+        width: 10px;
+    }
+}
+
+@media (max-width: 100px) {
+    header {
+        font-size: 5px; /* Taille pour très petits écrans */
+    }
+}

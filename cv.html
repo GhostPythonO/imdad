@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CV</title>
+
+    <link rel="stylesheet" href="style_boostrap.css">
+    <link rel="stylesheet" href="google_font.css">
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> -->
+
+    <!-- CSS personnalisé -->
+    <style>
+        *{
+            transition: all .2s linear;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f1f1f1;
+            color: #666;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #2C3E50;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #192a56;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 1.7rem;
+            font-weight: 600;
+            color: #192a56;
+            margin-top: 30px;
+            border-bottom: 2px solid #192a56;
+            padding-bottom: 10px;
+        }
+
+        .card {
+            border-radius: 8px;
+            border: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            margin-top: 20px;
+        }
+
+        .card-header {
+            background-color: #192a56;
+            color: white;
+            font-weight: 600;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-body p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* Skills */
+        .skill-bar {
+            height: 18px;
+            background-color: #192a56;
+            border-radius: 10px;
+        }
+
+        .skill-bar-fill {
+            height: 100%;
+            border-radius: 10px;
+            background-color: #27ae60;
+        }
+
+        /* Contact Info */
+        .contact-info i {
+            font-size: 1.3rem;
+            color: #27ae60;
+            margin-right: 10px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .contact-info a:hover {
+            color: #27ae60;
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        .animation-appear {
+            animation: fadeIn 2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .footer a {
+            color: #192a56;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header animation-appear">
+            <img src="profil.png" alt="Photo de profil" class="profile-img">
+            <h1>Imdad MOUSSE</h1>
+            <p>Étudiant en Réseau informatique et Génie Logiciel (RGL) | 2ème année - PIGIER-BENIN</p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info animation-appear">
+            <div><i class="bi bi-envelope-fill"></i><a href="mailto:imdadmousse07@gmail.com">imdadmousse07@gmail.com</a></div>
+            <div><i class="bi bi-telephone-fill"></i><a href="tel:+229 90 56 05 59">+229 90 56 05 59</a></div>
+            <!-- <div><i class="bi bi-linkedin"></i><a href="https://www.linkedin.com/in/jean-dupont" target="_blank">LinkedIn</a></div>
+            <div><i class="bi bi-github"></i><a href="https://github.com/jeandupont" target="_blank">GitHub</a></div> -->
+        </div>
+
+        <!-- About Me -->
+        <div class="section-title">À propos de moi</div>
+        <div class="card animation-appear">
+            <div class="card-header">Présentation</div>
+            <div class="card-body">
+                <p>Je suis un étudiant passionné par l'informatique, actuellement en 2ème année de Réseau informatique et Génie Logiciel (RGL). Je suis curieux et j'aime résoudre des problèmes complexes en utilisant les dernières technologies. Je m'intéresse au développement logiciel, à l'intelligence artificielle et à la gestion de bases de données.</p>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="section-title">Compétences</div>
+        <div class="card animation-appear">
+            <div class="card-header">Compétences Techniques</div>
+            <div class="card-body">
+                <div><strong>Langages de programmation</strong></div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 80%;"></div>
+                </div>
+                <p>Python, Java, C++, JavaScript, HTML5, CSS3</p>
+
+                <div><strong>Frameworks & Technologies</strong></div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 45%;"></div>
+                </div>
+                <p>Laravel, Express, Django, SQL</p>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section-title">Formation</div>
+        <div class="card animation-appear">
+            <div class="card-header">Université PIGIER-BENIN</div>
+            <div class="card-body">
+                <p><strong>Licence Professionnelle - Sciences et Technologies - Infomatique</strong> — 2ème année (2024-2025)</p>
+                <p>Spécialisation en développement logiciel et bases de données.</p>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section-title">Projets</div>
+        <div class="card animation-appear">
+            <div class="card-header">Projets Personnels</div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Application Web de gestion des commandes d'un restauran avec intégration de base de données.t</strong> : Une application full-stack avec React et Node.js pour organiser les tâches quotidiennes.</li>
+                    <li><strong>Site de e-commerce</strong> : Création d'un site de e-commerce avec intégration de base de données.</li>
+                    <!-- <li><strong>Application de prévision de prix de crypto-monnaies</strong> : Utilisation de l'API Python pour prédire les tendances des crypto-monnaies.</li> -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="section-title">Certifications</div>
+        <div class="card animation-appear">
+            <div class="card-header">Certifications</div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Certification Excel et Powerpoint</strong> — Microsoft, 2023</li>
+                    <li><strong>Python pour la Data Science</strong> — Coursera, 2023</li>
+                    <li><strong>Développement Web Full-Stack</strong> — Udemy, 2023</li>
+                    <li><strong>Introduction à l'Intelligence Artificielle</strong> — edX, 2023</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-title">Expérience Professionnelle</div>
+<div class="card animation-appear">
+    <div class="card-header">Stage Développeur Web</div>
+    <div class="card-body">
+        <p><strong>Entreprise XYZ</strong> (2023-2024)</p>
+        <p>Développement d'une plateforme de gestion interne utilisant React, Node.js et MongoDB. Participation à la conception de nouvelles fonctionnalités et à la mise en production des applications.</p>
+    </div>
+</div>
+
+<div class="section-title">Langues</div>
+<div class="card animation-appear">
+    <div class="card-header">Langues</div>
+    <div class="card-body">
+        <p><strong>Français</strong> : Langue officiel</p>
+        <p><strong>Anglais</strong> : Niveau intermédiaire (B2)</p>
+        <p><strong>Yoruba</strong> : Langue maternelle</p>
+    </div>
+</div>
+
+<div class="section-title">Loisirs & Centres d'intérêt</div>
+<div class="card animation-appear">
+    <div class="card-header">Loisirs</div>
+    <div class="card-body">
+        <ul>
+            <li>Lecture de livres sur la science et la technologie.</li>
+            <li>Participation à des hackathons et compétitions de programmation.</li>
+            <li>Voyages pour découvrir différentes cultures et cuisines.</li>
+            <li>Jouer au football</li>
+        </ul>
+    </div>
+</div>
+        <!-- Footer -->
+        <div class="footer animation-appear">
+            <p>&copy; 2024 Imdad MOUSSE | <a href="mailto:imdadmousse07@gmail.com">Contactez-moi</a></p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS et Popper.js -->
+     <script src="script_boostrap.js"></script>
+     <script src="script_boostrap2.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script> -->
+
+</body>
+
+</html>
